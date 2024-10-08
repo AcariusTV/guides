@@ -1,0 +1,66 @@
+body {
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(201, 165, 68);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.all-guides-content {
+    color: rgb(255, 255, 255);
+    padding: 0px 15px;
+    height: 3000px;
+    width: 800px;
+    margin-top: 20px;
+}
+
+.title {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.title:hover {
+    text-decoration: underline;
+}
+
+.lastupdated {
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(107, 107, 107);
+    margin-left: 7.5px;
+}
+
+.lastupdated:hover {
+    text-decoration: underline;
+}
+
+.building-a-compiler {
+    margin-top: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 800px;
+    height: 235px;
+    padding: 15px;
+}
+
+.code {
+    background-color: rgb(39, 39, 39);
+    border-radius: 10px;
+    height: auto;
+    padding: 15px 15px 15px 15px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    margin-bottom: 20px;
+}

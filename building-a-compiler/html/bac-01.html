@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AcariusTV's Coding Guides | Building a compiler 01</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="all-guides-content">
+        <a class="title" href="bac-01.html">Building a compiler | 01 - The Setup</a>
+        <a class="lastupdated" href="/index.html">Return to home ↩</a>
+        <p>Welcome to part 01 of the guide for Building a compiler using Rust! In this part, we will have a look at setting up our project and development enviroment, so we can start in the next part with the Lexer. As you already read, for this guide it is required, that you have already installed Rust. If that isn't true, you can visit the official <a href="https://www.rust-lang.org/">Rust</a> website and install Rust using their tutorial.</p>
+        <a class="title" style="text-decoration: none;">Creating the project folder using cargo</a>
+        <p>We start by creating a project folder using Rust's package manager <a href="https://doc.rust-lang.org/cargo/">cargo</a>. cargo offers many commands that can maximize your experience developing with Rust. We will use the command <code>cargo new</code> for creating the project folder. Navigate to the directory where you want to create the project folder in, for example a directory for development. Now enter the <code>cargo new</code> like this:</p>
+        <div class="code">
+            cargo new compiler-tutorial
+        </div>
+        <p>For the name, I chose compiler-tutorial, but you can just enter any name. Just make sure to include no spaces. Now we can navigate to the newly created project folder and open our code editor of choice in this folder.</p>
+        <p>The project structure of this folder should something like this:</p>
+        <div class="code">
+            compiler-tutorial/ <br>
+            ├── Cargo.toml <br>
+            ├── Cargo.lock <br>
+            └── src/ <br> 
+            &nbsp;&nbsp;&nbsp;&nbsp;└── main.rs
+        </div>
+        <p>We have three files: <code>Cargo.toml</code>, <code>Cargo.lock</code> and <code>main.rs</code>. In the src/ folder we will write our code. The Cargo.toml file is a configuration file for our project, that manages dependencies and some more things. The first thing that we will do is add some more files: <code>lexer.rs</code> and <code>parser.rs</code>. These files will go into the src/ folder and will later be filled with Rust code. Now it should look like this:</p>
+        <div class="code">
+            compiler-tutorial/ <br>
+            ├── Cargo.toml <br>
+            ├── Cargo.lock <br>
+            └── src/ <br> 
+            &nbsp;&nbsp;&nbsp;&nbsp;├── lexer.rs <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;├── parser.rs <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;└── main.rs
+        </div>
+        <a class="title" style="text-decoration: none;">Writing the main.rs file</a>
+        <p>Now, let’s add some basic Rust code to the <code>main.rs</code> file to ensure everything is set up correctly. The goal is to write a simple <code>hello world</code> program to confirm that our project is working. Open <code>src/main.rs</code> and replace any existing content with the following:</p>
+        <div class="code">
+            fn main() {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;println!("Hello, compiler!");<br>
+            }
+        </div>
+        <p>This basic program prints "Hello, compiler!" to the console when you run it.</p>
+
+        <a class="title" style="text-decoration: none;">Running the project</a>
+        <p>To test if everything is working, open your terminal, navigate to the project folder, and run the following command:</p>
+        <div class="code">
+            cargo run
+        </div>
+        <p>If everything is set up correctly, you should see the following output:</p>
+        <div class="code">
+            Compiling compiler-tutorial v0.1.0 (file:///path/to/project)<br>
+            Finished dev [unoptimized + debuginfo] target(s) in 2.34s<br>
+            Running `target/debug/compiler-tutorial`<br>
+            Hello, compiler!
+        </div>
+        <p>This confirms that Rust, Cargo, and our project are all working correctly.</p>
+
+        <a class="title" style="text-decoration: none;">Next steps</a>
+        <p>With the project setup complete, you are ready to move to the next part of this tutorial, where we will start building the <strong>lexer</strong>!</p>
+        <p>→ <a href="building-a-compiler/html/bac-02.html">Next page (page 02)</a></p>
+    </div>
+    </div>
+</body>
+</html>
